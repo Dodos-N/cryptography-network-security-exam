@@ -1,0 +1,6 @@
+cat << 'EOF' > sample_student_record.txt
+STUDENT_ID: ULK-2026-9812
+NAME: Alice M.
+PROGRAM: Cybersecurity
+STATUS: Enrolled
+EOF
