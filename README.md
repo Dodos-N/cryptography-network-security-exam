@@ -1,4 +1,11 @@
-# cryptography-network-security-exam
+# Cryptography & Network Security Exam Project
+
+**Module:** ETTCS801 Cryptography and Network Security  
+**Institution:** ULK Polytechnic Institute
+**Student ID:** 4202670005
+**Lecturer:** Isaac TUMWINE
+
+---
 
 ## Repository Overview
 This repository contains a full implementation of security mitigations addressing vulnerabilities identified in central student records management, unencrypted network transfers, and access controls.
@@ -13,10 +20,9 @@ cryptography-network-security-exam/
 ├── risk_assessment.md       # Task 1: Assets, vulnerabilities, risk matrix, and controls
 ├── filter_tests.md          # Task 3: Command logs and firewall test matrix
 ├── security_toolkit.py      # Task 2: Python script for encryption, decryption, and integrity
+├── sample_student_record.txt # Sample input data file
 ├── firewall/
 │   └── iptables_rules.sh    # Task 3: IPTables rules configuration script
 └── report/
     ├── report.tex           # Task 5: LaTeX source report
     └── report.pdf           # Task 5: Compiled PDF technical report
-```
-
