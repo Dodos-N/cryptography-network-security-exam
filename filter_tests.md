@@ -35,7 +35,7 @@
   nc -zv -w 3 10.0.0.100 443
   ```
   
-* **Expected Outcome:** Connection dropped / timeout[cite: 1].
+* **Expected Outcome:** Connection dropped / timeout.
 
 * **Actual Command Output:**
 
@@ -43,7 +43,7 @@
 * **Status: PASSED**
 
 * **Test 3: Blocked Access — Unfamiliar External IP (Task 3c)**
-* **Source Host:** External Machine (172.16.0.88)[cite: 1]
+* **Source Host:** External Machine (172.16.0.88)
 
 * **Command Executed:**
   ```Bash
