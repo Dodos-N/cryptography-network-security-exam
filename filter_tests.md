@@ -20,4 +20,40 @@
   ```bash
   nc -zv -w 3 10.0.0.100 443
   ```
+
+ * **Expected Outcome:** Connection allowed / port open.
+   
+* **Actual Command Output:**
+  Connection to 10.0.0.100 443 port [tcp/https] succeeded!
+* **Status: PASSED**
+
+* **Test 2: Blocked Access — Guest Network (Task 3a)**
+* **Source Host:** Guest Laptop (192.168.20.50)
+
+* **Command Executed:**
+  ```Bash
+  nc -zv -w 3 10.0.0.100 443
+  ```
   
+* **Expected Outcome:** Connection dropped / timeout[cite: 1].
+
+* **Actual Command Output:**
+
+nc: connect to 10.0.0.100 port 443 (tcp) timed out: Operation now in progress
+* **Status: PASSED**
+
+* **Test 3: Blocked Access — Unfamiliar External IP (Task 3c)**
+* **Source Host:** External Machine (172.16.0.88)[cite: 1]
+
+Command Executed:
+
+```Bash
+curl --connect-timeout 3 [https://10.0.0.100](https://10.0.0.100)
+```
+
+* **Expected Outcome:** Connection dropped / timeout.
+
+* **Actual Command Output:**
+
+curl: (28) Failed to connect to 10.0.0.100 port 443 after 3001 ms: Could not connect
+* **Status: PASSED**
